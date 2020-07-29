@@ -29,5 +29,14 @@ describe('sayHello', function() {
     });
     it("should return the string 'Hello, Pat!' when called with 'Pat'", function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
-    })
+    });
+    it('should return "Hello, World! when run without arguments', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when run with true as the value', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when run with a falsy value', function () {
+        expect(sayHello(false)).toBe("Hello, World!");
+    });
 });

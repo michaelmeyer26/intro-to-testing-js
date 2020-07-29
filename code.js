@@ -5,5 +5,11 @@ const helloWorld = function() {
 
 //sayHello function
 const sayHello = function(input) {
-    return "Hello, " + input  + "!";
+    if (input === "") {
+        return "Hello, World!";
+    } else if (typeof input === "string") {
+        return "Hello, " + input  + "!";
+    } else{
+        return "Hello, World!";
+    }
 }
