@@ -15,3 +15,11 @@ const sayHello = function(input) {
         return "Hello, World!";
     }
 }
+
+function isFive(value) {
+    if (value == 5) {
+        return true;
+    } else {
+        return false;
+    }
+}
