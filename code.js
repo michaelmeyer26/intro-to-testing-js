@@ -7,9 +7,11 @@ const helloWorld = function() {
 const sayHello = function(input) {
     if (input === "") {
         return "Hello, World!";
-    } else if (typeof input === "string") {
+    } else if (isNaN(input) === false) {
+        return "Hello, World!"
+    }else if (typeof input === "string") {
         return "Hello, " + input  + "!";
-    } else{
+    } else {
         return "Hello, World!";
     }
 }
