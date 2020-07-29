@@ -17,9 +17,5 @@ const sayHello = function(input) {
 }
 
 function isFive(value) {
-    if (value == 5) {
-        return true;
-    } else {
-        return false;
-    }
+    return value == 5;
 }
