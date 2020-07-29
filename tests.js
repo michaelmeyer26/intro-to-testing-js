@@ -52,3 +52,18 @@ describe('isFive', function () {
         expect(isFive(5)).toBe(true);
     });
 });
+
+describe('isEven', function() {
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe('function');
+    });
+    it('should return a boolean value', function () {
+        expect(typeof isEven()).toBe('boolean');
+    });
+    it('should return true when executed with isEven(2)', function () {
+        expect(isEven(2)).toBe(true);
+    });
+    it('should return true when exectured as isEven(-4)', function () {
+        expect(isEven(-4)).toBe(true);
+    });
+});

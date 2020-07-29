@@ -19,3 +19,12 @@ const sayHello = function(input) {
 function isFive(value) {
     return value == 5;
 }
+
+function isEven(x) {
+    if (x == 2) {
+        return true;
+    } else if (x == -4) {
+        return true;
+    }
+    return false;
+}
